@@ -5,4 +5,9 @@ pass
 lista = [valor for valor in range(0, 101) if valor % 2 == 0] #< Sacar los numeros pares (% = residuo)
 #1-valor a agregar a lista
 #2- un ciclo, for
-print(lista)
+
+tupla =tuple(valor for valor in range(0, 101) if valor % 2 != 0) #Tupla con numeros impares
+print(tupla)
+
+diccionario = { indice:valor for indice, valor in enumerate(lista)}
+print(diccionario)

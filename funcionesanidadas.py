@@ -17,11 +17,16 @@ def division(num_uno, num_dos):
         return num_uno / num_dos
 
 resultado = division(10,5)
-print(resultado)
+#print(resultado)
 
-def crear_funcion(num_uno, num_dos):
+def crear_funcion(num_uno, num_dos): #Closure
     def validacion():
+        print("se ejecuta validacion")
         return num_uno > 0 and num_dos > 0
     return validacion()
 
-nueva_funcion = crear_funcion
+def aplicar_funcion(func):
+    func
+
+nueva_funcion = crear_funcion(10, -5)
+aplicar_funcion(nueva_funcion)

@@ -5,7 +5,8 @@ def crear_funcion(num_uno, num_dos): #Closure
     return validacion()
 
 def aplicar_funcion(func):
-    func
+    resultado = func
+    print(resultado)
 
-nueva_funcion = crear_funcion(10, 9)
+nueva_funcion = crear_funcion(10, -9)
 aplicar_funcion(nueva_funcion)
